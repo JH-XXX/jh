@@ -39,35 +39,40 @@ font-family: "Noto Sans KR", sans-serif;
   padding: 50px;
   background: #000;
   display: flex;
-  justify-content: center;
-  position: relative;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.top_nav nav{
-  display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
+  flex-direction:row;
+  position: relative;
 }
-.logo a{
+.top_nav .logo {
   width: 420px;
   height: 62px;  
-  display: inline-block;
   text-indent: -9999em; 
   display: flex;
   justify-content: center;
+  align-items: center;
   position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   
 }
 .main_menuleft{
   gap: 10px;
   margin-right: 537px;
   color: var(--white);
+  
 }
 .main_menuright{
   gap: 10px;
-  color: var(--white);
-  
-  
+  color: var(--white);  
+}
+
+.products_container{
+  width: 309px;
+  height: 450px;
+  display: flex;
+  flex-wrap:wrap
 }
