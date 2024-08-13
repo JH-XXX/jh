@@ -11,6 +11,7 @@
   --nowhite:#E6E6E6;
   --primary:#D8CACA;
   --container:1920px;
+  
 }
 body{
   background: #000;
@@ -54,6 +55,8 @@ header{
 
 .content_container{
   width: 1162px;  
+  bottom: ;
+  
 }
 .content_container .desc{
   
@@ -64,17 +67,37 @@ header{
  
 }
 
+.desc { 
+  width: 689px; 
+  flex-direction:column;
+  display: flex;
+  justify-content: center
+}
 .desc h2{
   font-family: "Noto Sans", sans-serif;
   color: var(--nowhite);
   font-weight: 500;
   font-size: 40px;
-  flex-direction:column
+  text-transform: uppercase;
+  
+}
+.desc h3{
+  font-family: "Noto Sans", sans-serif;
+  color: var(--nowhite);
+  font-weight: 500;
+  font-size: 32px;
+  text-transform: uppercase; 
+}
+.desc p{
+  font-family: "Noto Sans", sans-serif;
+  color: var(--nowhite);
+  font-weight: 400;
+  font-size: 20px;  
+  text-align: center;
+ 
 }
 
-.desc .vshow{
-width: 761px;
-}
+
 
 header .logo{
 position: absolute;
@@ -172,7 +195,7 @@ section{
 
 .products_menu .newproduct{ /*텍스트에 그라디언트 주는방법 */
   text-align: center;
-  margin-bottom: 80px;
+  margin: 80px 0;
   font-size: 32px;
   text-transform: uppercase;
   font-family: "Noto Sans", sans-serif;
@@ -188,10 +211,8 @@ section{
   font-weight: 400;
 }
 
-.measure{
-   width: 1592px; 
-   display: flex;
-  justify-content: center;
+.measure{   
+ 
   
 }
 
