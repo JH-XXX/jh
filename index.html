@@ -9,16 +9,16 @@
   
 </head>
 <body>
-  <header>
-    <div class="top_nav">      
-        <h1 class="logo"><a href="">prada</a></h1>
-        <div class="top_nav_menu">
-          <nav>
-            <ul class="main_menuleft">
-              <li><i class="fa-solid fa-bars"></i><a href="">메뉴</a></li>
-              <li><i class="fa-solid fa-magnifying-glass"></i><a href="">검색</a></li>
-            </ul>
-            <ul class="main_menuright">
+  <header>       
+    <h1 class="logo"><a href="">prada</a></h1>
+      <nav class="top_nav_menu">          
+          <ul class="main_menuleft">
+            <li><i class="fa-solid fa-bars"></i><a href="">메뉴</a></li>
+            <li><i class="fa-solid fa-magnifying-glass"></i><a href="">검색</a></li>
+          </ul>
+          <div class="main_menuright">
+
+            <ul >
               <li><i class="fa-regular fa-heart"></i><a href="">찜</a></li>
               <li><i class="fa-regular fa-user"></i><a href="">마이페이지</a></li>
               <li><i class="fa-solid fa-bag-shopping"></i><a href="">장바구니</a></li>
@@ -35,23 +35,24 @@
                 <li>ChINESE</li>
               </ul>
             </div>
-          </nav>      
-        </div>
-    </div>
-    <div class="content_container">
-        <div class="desc">
-        <video src="/images/2024show.mp4"></video> <!--패션쇼 오른쪽 동영상-->
-        <h2>Now that we're here</h2> <!-- 대문자-->
-        <h3>Prada Women's and Men's Fall/Winter 2024 campaign</h3>
-        <p>2024 가을/겨울 프라다 광고 캠페인은 하우스의 창의성의 핵심인 대화와 아이디어 교환이라는 기본 원칙을 수용합니다. 새로운 컬렉션을 만나보세요.</p>
-    </div>
-      
+          </div>
+        </nav>      
+        
+    
+
   </header>
+  <div class="content_container">
+    <div class="desc">
+      <video class="vshow" src="/images/2024show.mp4"></video> <!--패션쇼 오른쪽 동영상-->
+      <h2>Now that we're here</h2> <!-- 대문자-->
+      <h3>Prada Women's and Men's Fall/Winter 2024 campaign</h3>
+      <p>2024 가을/겨울 프라다 광고 캠페인은 하우스의 창의성의 핵심인 대화와 아이디어 교환이라는 기본 원칙을 수용합니다. 새로운 컬렉션을 만나보세요.</p>
+  </div>
+</div>
   <main>
 <section class="products_container">  
-    <div class="products_menu">
-     
-        <h3>new product</h3>
+    <div class="products_menu">     
+        <h3 class="newproduct">new product</h3>
         <ul>
           <li>
             <figure>
@@ -85,9 +86,8 @@
               </figcaption>
             </figure>
           </li>
-        </ul>
-      
-        <h3>Men's and women's gift</h3>
+        </ul>      
+        <h3 class="gift">Men's and women's gift</h3>
         <ul>
           <li>
             <figure>
@@ -125,6 +125,7 @@
     </div>
 </section>
 <section class="measure">
+  <h3 class="mademeasure">Prada Made to Measure</h3>
   <ul class="measure_tap">
     <li><a href="">구매하기</a></li>
     <li><a href="">구매하기</a></li>
@@ -173,5 +174,6 @@
     
     <p>©PRADA 2007 - 2024 | Tax registration number is 213-86-18599</p>   
   </footer>
+  <img src="/images/pradabg.jpg" alt="">
 </body>
 </html>
