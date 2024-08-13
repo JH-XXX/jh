@@ -54,17 +54,13 @@ header{
 
 
 .content_container{
-  width: 1162px;  
-  bottom: ;
-  
+  width: 1162px;    
 }
-.content_container .desc{
-  
- height: 743px;
- display: flex;
- justify-content: space-between;
- align-items: center;
- 
+.content_container .desc{  
+  height: 743px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
 }
 
 .desc { 
@@ -93,8 +89,7 @@ header{
   color: var(--nowhite);
   font-weight: 400;
   font-size: 20px;  
-  text-align: center;
- 
+  text-align: center; 
 }
 
 
@@ -112,8 +107,6 @@ header .logo a{
   height:40px;  
   text-indent: -9999em;
   background: url(../images/LOGO.svg) no-repeat;  
-
-
 }
 
 header nav{
@@ -127,13 +120,20 @@ header nav{
   font-weight: 400;
   display: flex;
   justify-content: space-between;
+  
+}
+
+
+
+.main_menuleft li a{ 
+  color: var(--nowhite);
+  margin-left: 10px;
 }
 
 header .dropdown{
   color: var(--nowhite);
   /* overflow: hidden; */
   position: relative;
-
 }
 
 header .dropdown ul{
@@ -157,9 +157,13 @@ header .dropdown ul{
 .main_menuright{
   color: var(--white);  
   display: flex;
+  justify-content: center;
 }
 .main_menuright ul{
   display: flex;
+}
+.login_links{
+  margin-right: 59px;
 }
 
 section{
@@ -177,8 +181,7 @@ section{
   margin-top: 55px;
 }
 
-.products_menu ul{
-  
+.products_menu ul{  
   width: 1592px;
   display: flex;  
   justify-content: space-between;
@@ -211,8 +214,7 @@ section{
   font-weight: 400;
 }
 
-.measure{   
- 
+.measure{    
   
 }
 
