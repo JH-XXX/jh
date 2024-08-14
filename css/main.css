@@ -43,28 +43,30 @@ header{
   padding:40px;
   position: relative;
   border-bottom: #fff solid 2px; 
+  transition: transform 0.5s;
 }
+/* .scroll-down .page_header{
+  transform: translateY(-100%);
+}
+.scroll-up .page_header{
+  transform: translateY(0);
+} */
 .content_container{
-  width: 1162px;    
+  width: 100%;
   height: 743px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.content_container .video{
-  width:100%; 
-  height:100%; 
-  object-fit:cover;
+  /* justify-content: space-between; */
+  /* align-items: center; */
 }
 .content_container .desc{  
+  top: 0;
   width: 100%; 
-  gap: 100px;
   display: flex;
-  /* align-items: center;  */
-  padding: 142px 150px;
   text-align: center;
-  flex-direction:column;
-  /* padding: 40px 235px; */
+
+  flex-direction:row-reverse;
+  justify-content: space-between;
+  align-items: center; 
 }
 .desc h2{
   font-family: "Noto Sans", sans-serif;
@@ -198,7 +200,7 @@ section{
   font-weight: 400;
 }
 .measure{    
-  
+  width: 1600px;
 }
 
 .measure h3{ /*텍스트에 그라디언트 주는방법  */
