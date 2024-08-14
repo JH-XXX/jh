@@ -10,8 +10,7 @@
   --footer:#B7AAAA;
   --nowhite:#E6E6E6;
   --primary:#D8CACA;
-  --container:1920px;
-  
+  --container:1920px;  
 }
 body{
   background: #000;
@@ -20,9 +19,6 @@ body{
 body section{
   color: var(--nowhite);
 }
-
-
-
 /* 레이아웃 */
 .container{
   width: var(--container);
@@ -30,7 +26,6 @@ body section{
   background: #000 url(../images/pradabg.jpg) bottom 0 no-repeat;
   height: 4109px;  
 }
-
 .content{
   background: #000 ;
 }
@@ -41,7 +36,6 @@ font-family: "Noto Sans", sans-serif;
 font-weight: 400;
 font-family: "Noto Sans KR", sans-serif;
 /*
-
 /*링크 버튼*/
 
 
@@ -50,32 +44,34 @@ header{
   position: relative;
   border-bottom: #fff solid 2px; 
 }
-
-
-
 .content_container{
   width: 1162px;    
-}
-.content_container .desc{  
   height: 743px;
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
 }
-
-.desc { 
-  width: 689px; 
-  flex-direction:column;
+.content_container .video{
+  width:100%; 
+  height:100%; 
+  object-fit:cover;
+}
+.content_container .desc{  
+  width: 100%; 
+  gap: 100px;
   display: flex;
-  justify-content: center
+  /* align-items: center;  */
+  padding: 142px 150px;
+  text-align: center;
+  flex-direction:column;
+  /* padding: 40px 235px; */
 }
 .desc h2{
   font-family: "Noto Sans", sans-serif;
   color: var(--nowhite);
   font-weight: 500;
   font-size: 40px;
-  text-transform: uppercase;
-  
+  text-transform: uppercase;  
 }
 .desc h3{
   font-family: "Noto Sans", sans-serif;
@@ -91,16 +87,12 @@ header{
   font-size: 20px;  
   text-align: center; 
 }
-
-
-
 header .logo{
 position: absolute;
 top: 50%;
 left: 50%;    
 transform: translate(-50%,-50%);
 }
-
 header .logo a{
   display: block;
   width: 270px;
@@ -108,34 +100,26 @@ header .logo a{
   text-indent: -9999em;
   background: url(../images/LOGO.svg) no-repeat;  
 }
-
 header nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .top_nav_menu{
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
   display: flex;
-  justify-content: space-between;
-  
+  justify-content: space-between;  
 }
-
-
-
 .main_menuleft li a{ 
   color: var(--nowhite);
   margin-left: 10px;
 }
-
 header .dropdown{
   color: var(--nowhite);
   /* overflow: hidden; */
   position: relative;
 }
-
 header .dropdown ul{
   position: absolute;
   right:0;
@@ -147,13 +131,11 @@ header .dropdown ul{
   background: transparent;
   display: block;
 }
-
 .main_menuleft{
   gap: 10px;
   color: var(--white);  
   display: flex;
 }
-
 .main_menuright{
   color: var(--white);  
   display: flex;
@@ -165,7 +147,6 @@ header .dropdown ul{
 .login_links{
   margin-right: 59px;
 }
-
 section{
   position: relative;
 }
@@ -173,20 +154,17 @@ section{
   /* display: flex; */
   width: 100%;
 }
-
 .new_product h3{
   text-align: center;
 }
 .products_menu h4{
   margin-top: 55px;
 }
-
 .products_menu ul{  
   width: 1592px;
   display: flex;  
   justify-content: space-between;
-  text-align: center;    
-  
+  text-align: center;      
   margin: 0 auto;
   gap: 100px;
   margin-bottom: 50px;
@@ -195,15 +173,13 @@ section{
 .products_menu ul li figure img{
   background: linear-gradient(red, yellow); /*이미지에 그라디언트 주는방법 */
 }
-
 .products_menu .newproduct{ /*텍스트에 그라디언트 주는방법 */
   text-align: center;
   margin: 80px 0;
   font-size: 32px;
   text-transform: uppercase;
   font-family: "Noto Sans", sans-serif;
-  font-weight: 400;
-  
+  font-weight: 400;  
 }
 .products_menu .gift{ /*텍스트에 그라디언트 주는방법 */
   text-align: center;
@@ -213,7 +189,6 @@ section{
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
 }
-
 .measure{    
   
 }
@@ -234,7 +209,6 @@ section{
   gap: 61px;
   margin-top:  50px;
 }
-
 footer{
  color: ;
 }
