@@ -51,6 +51,10 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 .scroll-down .page_header{
   transform: translateY(-100%);
@@ -76,8 +80,8 @@ header{
   justify-content: space-between;
   align-items: center; 
 }
-.content_container .desc .vshow{
-  width: 100%;
+header .vshow{
+
   
   
 }
@@ -128,9 +132,11 @@ header nav{
   justify-content: space-between;
   align-items: center;
 }
+button{
+  background:none;
+  color: none;
+}
 header .dropdown{
-  color: var(--nowhite);
-  /* overflow: hidden; */
   position: relative;
 }
 header .dropdown ul{
@@ -144,7 +150,15 @@ header .dropdown ul{
   background: transparent;
   /* display: none; */
 }
+header .dropdown ul li{
+  line-height: 20px;
+  padding: 0 15px;
+  
+}
+header .dropdown ul li:hover{
+  color: var(--black);
 
+}
 .top_nav_menu{
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
@@ -155,13 +169,7 @@ header .dropdown ul{
   color: var(--nowhite);
   margin-left: 10px;
 }
-header .dropdown ul li{
-  line-height: 20px;
-  padding: 5px;
-}
-header .dropdown ul li:hover{
-  color: var(--nowhite);
-}
+
 .main_menuleft{
   gap: 10px;
   color: var(--white);  
@@ -223,37 +231,35 @@ section{
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
 }
-.measure{    
-  width: 1600px;
+.measure_container{    
+ width: 100%; 
+ position: relative;
 }
 
-.measure h3{ /*텍스트에 그라디언트 주는방법  */
+.measure_container h3{ /*텍스트에 그라디언트 주는방법  */
   text-align: center;
-  margin-bottom: 80px;
+  margin-top: 168px;
   font-size: 32px;
   text-transform: uppercase;
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
-  transform: translateX(50%);
-  transform: translateY(50%);
+  /* transform: translate(50%,50%); */
 }
 .measure_tap{
   display: flex;
   justify-content: space-between;
-  gap: 61px;
-  margin-top:  50px;
-  
+  gap: 58px;
+  margin-top:  168px;
 }
-.measure ul a{
+.measure_container ul a{
   color: var(--Dark-Gray);
   font-size: 25px;
   font-weight: 400;
   font-family: "Noto Sans", sans-serif;
   position: absolute;
   display: flex;
-  
+  right: 50px;
   justify-content: space-between;
-  gap: 500px;
 }
 footer{
  color: ;
