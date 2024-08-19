@@ -1,16 +1,6 @@
 const body = document.body;
 let lastScroll = 0;
-
-
-
-
-
-
-
-
-
-
-
+//공백
 window.addEventListener('scroll',()=>{
   let currentScroll = window.scrollY;
 
