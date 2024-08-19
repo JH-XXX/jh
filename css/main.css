@@ -201,14 +201,14 @@ section{
   position: relative;
 }
 .products_container{
-  /* display: flex; */
   width: 100%;
 }
 .new_product h3{
   text-align: center;
 }
-.products_menu h4{
+.products_menu a{
   margin-top: 55px;
+  color: white;
 }
 .products_menu ul{  
   width: 1592px;
@@ -254,7 +254,7 @@ section{
   /* transform: translate(50%,50%); */
 }
 .measure_tap{
-  width: 1500px;
+  width: 1600px;
   margin:168px auto 0;
   display: flex;  
   gap: 58px;
@@ -284,9 +284,9 @@ footer{
   display: flex;
   justify-content: space-between;
 }
-footer .Introduction{
+footer dl{
   color: var(--primary);
- 
+  
 }
 
 footer:before{
@@ -297,5 +297,7 @@ footer:before{
   top: 0;
   bottom: 0;
   background:linear-gradient(rgba(0,0,0,.8), rgba(20,19,19,.7));
+  
 }
+
 
