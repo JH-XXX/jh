@@ -15,6 +15,7 @@
 body{
   background: #000;
   height: 4109px;
+  padding-top: 103px;
 }
 body section{
   color: var(--nowhite);
@@ -50,13 +51,12 @@ header{
 
 
 .page_header{
-  display: flex;
-  justify-content: space-between;
+  position: fixed;
   align-items: center;
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0;
+  background: #000;
 }
 .scroll-down .page_header{
   transform: translateY(-100%);
@@ -69,9 +69,9 @@ header{
 .content_container{
   width: 100%;
   
-  display: flex;
-  /* justify-content: space-between; */
-  /* align-items: center; */
+  /* display: flex;
+  justify-content: space-between; 
+  align-items: center; */
 }
 .content_container .desc{  
   top: 0;
@@ -82,8 +82,10 @@ header{
   justify-content: space-between;
   align-items: center; 
 }
-header .vshow{
-  ?
+.content_container video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .content_container .desc_sub{
   display: flex;
@@ -136,6 +138,7 @@ header nav{
 button{
   background:none;
   color: none;
+  border: none;
 }
 button i{
   color: var(--nowhite);
@@ -168,7 +171,7 @@ header .dropdown ul li:hover{
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 .main_menuleft li a{ 
   color: var(--nowhite);
@@ -237,8 +240,8 @@ section{
   font-weight: 400;
 }
 .measure_container{    
-  width: 100%
- position: relative;
+  width: 100%;
+  position:relative;
 }
 
 .measure_container h3{ /*텍스트에 그라디언트 주는방법  */
@@ -251,16 +254,18 @@ section{
   /* transform: translate(50%,50%); */
 }
 .measure_tap{
-  display: flex;
-  justify-content: space-between;
+  width: 1500px;
+  margin:168px auto 0;
+  display: flex;  
   gap: 58px;
-  margin-top:  168px;
-  padding: 0 160px;
+}
+.measure_tap img{
+  width: 100%;
 }
 .measure_tap a{
   display: flex;
   justify-content: space-between;
- gap: 689px;
+  gap: 689px;
 }
 .measure_container ul a{
   color: var(--Dark-Gray);
@@ -273,6 +278,24 @@ section{
   justify-content: space-between;
 }
 footer{
- color: ;
- background: url(/images/pradabg.jpg);
+  height: 1500px;
+  position: relative;
+  background: url(/images/pradabg.jpg) no-repeat 0 0/ cover;
+  display: flex;
+  justify-content: space-between;
 }
+footer .Introduction{
+  color: var(--primary);
+ 
+}
+
+footer:before{
+  content:'';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background:linear-gradient(rgba(0,0,0,.8), rgba(20,19,19,.7));
+}
+
