@@ -131,10 +131,15 @@ header nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 button{
   background:none;
   color: none;
+}
+button i{
+  color: var(--nowhite);
+  
 }
 header .dropdown{
   position: relative;
@@ -148,7 +153,7 @@ header .dropdown ul{
   flex-direction: column;
   border-radius:5px;
   background: transparent;
-  /* display: none; */
+  display: none;
 }
 header .dropdown ul li{
   line-height: 20px;
@@ -232,7 +237,7 @@ section{
   font-weight: 400;
 }
 .measure_container{    
- width: 100%; 
+  width: 100%
  position: relative;
 }
 
@@ -250,6 +255,12 @@ section{
   justify-content: space-between;
   gap: 58px;
   margin-top:  168px;
+  padding: 0 160px;
+}
+.measure_tap a{
+  display: flex;
+  justify-content: space-between;
+ gap: 689px;
 }
 .measure_container ul a{
   color: var(--Dark-Gray);
