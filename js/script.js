@@ -3,7 +3,6 @@ let lastScroll = 0;
 //공백
 window.addEventListener('scroll',()=>{
   let currentScroll = window.scrollY;
-
   if(currentScroll > lastScroll){
     body.classList.remove('scroll-up')
     body.classList.add('scroll-down')
