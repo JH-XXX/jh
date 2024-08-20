@@ -51,6 +51,7 @@ header{
 
 
 .page_header{
+  /* width: 100%; */
   position: fixed;
   align-items: center;
   left: 0;
@@ -64,7 +65,10 @@ header{
 .scroll-up .page_header{
   transform: translateY(0);
 }
-
+.slide-container{
+  display: flex;
+  justify-content: space-between;
+}
 
 .content_container{
   width: 100%;
@@ -200,17 +204,17 @@ header .dropdown ul li:hover{
 section{
   position: relative;
 }
-.products_container{
+.slide-wrapper{
   width: 100%;
 }
 .new_product h3{
   text-align: center;
 }
-.products_menu a{
+.slide-container a{
   margin-top: 55px;
   color: white;
 }
-.products_menu ul{  
+.slide-container ul{  
   width: 1592px;
   display: flex;  
   justify-content: space-between;
@@ -220,10 +224,10 @@ section{
   margin-bottom: 50px;
   flex-wrap: wrap;  
 }
-.products_menu ul li figure img{
+.slide-container ul li figure img{
   background: linear-gradient(red, yellow); /*이미지에 그라디언트 주는방법 */
 }
-.products_menu .newproduct{ /*텍스트에 그라디언트 주는방법 */
+ .newproduct{ /*텍스트에 그라디언트 주는방법 */
   text-align: center;
   margin: 80px 0;
   font-size: 32px;
@@ -231,7 +235,7 @@ section{
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;  
 }
-.products_menu .gift{ /*텍스트에 그라디언트 주는방법 */
+.gift{ /*텍스트에 그라디언트 주는방법 */
   text-align: center;
   margin-bottom: 80px;
   font-size: 32px;
