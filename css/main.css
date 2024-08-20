@@ -25,7 +25,7 @@ body section{
 .container{
   width: var(--container);
   margin:0 auto;
-  background: #000 url(../images/pradabg.jpg) bottom 0 no-repeat;
+  background: #000 url(../images/pradabg.jpg)   no-repeat;
   /* height: 4109px;   */
 }
 .content{
@@ -143,7 +143,7 @@ header nav{
 }
 button{
   background:none;
-  color: none;
+  color: transparent;
   border: none;
 }
 button i{
