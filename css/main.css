@@ -60,7 +60,7 @@ header{
   right: 0;
   top: 0;
   background: #000;
-  /* transition:transform 0.5s; */
+  transition:transform 0.5s;
 }
 .scroll-down .page_header{
   transform: translateY(-100%);
@@ -97,7 +97,7 @@ header{
   display: flex;
   flex-direction: column;
   width: 698px;
-  margin-left: 237px;
+  margin: 0 auto;
   gap:50px;
 }
 
@@ -219,16 +219,16 @@ section{
   /* margin-right: 0 auto; */
 }
 .slides{
-  width: 309px;
+  width: 1600px; /*임시로 넣음 */
   height: 450px;
   display: flex;
+  gap: 133px; 
   position: relative;
-  gap: 133px;
+  left: 0;
+  transition: 0.5s;
 }
-.slides.animated{
-	left:0;
-	transition:0.5s;
-}
+
+
 .slides li{
 	width: 309px;
 	height: 450px;
@@ -263,15 +263,20 @@ section{
   font-weight: 400;  
 }
 .controls{
-	text-align: center;
-	margin-top: 50px;
+  position: absolute;
+  top: 20px; /* 임시 */
+ 
+  transform:translateY(-50%);
+  z-index: 999999;
+  
 }
 .controls span{
-	background:#333;
+	background:#000;
 	color: #fff;
-	padding:10px 20px;
-	margin:0 10px;
-	display: inline-block;
+  gap: 20px;
+	/* padding:10px 20px; */
+	/* margin:0 40px; */
+	/* display: inline-block; */
 }
 
 .gift{
