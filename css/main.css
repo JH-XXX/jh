@@ -14,8 +14,9 @@
 }
 body{
   background: #000;
-  height: 4109px;
+  /* height: 4109px; */
   padding-top: 103px;
+  position: relative;
 }
 body section{
   color: var(--nowhite);
@@ -25,12 +26,13 @@ body section{
   width: var(--container);
   margin:0 auto;
   background: #000 url(../images/pradabg.jpg) bottom 0 no-repeat;
-  height: 4109px;  
+  /* height: 4109px;   */
 }
 .content{
   background: #000 ;
 }
 /*폰트*/
+
 /*
 font-family: "Sofia Sans", sans-serif;
 font-family: "Noto Sans", sans-serif;
@@ -38,16 +40,16 @@ font-weight: 400;
 font-family: "Noto Sans KR", sans-serif;
 font-family: "Noto Serif KR", serif;
 font-family: "PT Serif", serif;
-/*
-/*링크 버튼*/
+*/
+
 
 
 header{
   padding:40px;
-  position: relative;
+  /* position: relative; */
   border-bottom: #fff solid 2px; 
   transition: transform 0.5s;
-}
+} 
 
 
 .page_header{
@@ -58,17 +60,17 @@ header{
   right: 0;
   top: 0;
   background: #000;
+  /* transition:transform 0.5s; */
 }
 .scroll-down .page_header{
   transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
 }
 .scroll-up .page_header{
   transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
 }
-.slide-container{
-  display: flex;
-  justify-content: space-between;
-}
+
 
 .content_container{
   width: 100%;
@@ -100,7 +102,7 @@ header{
 }
 
 .desc h2{
-  font-family: "Noto Serif KR", serif;
+  font-family: "Noto Sans", sans-serif;
   color: var(--nowhite);
   font-weight: 500;
   font-size: 40px;
@@ -114,7 +116,7 @@ header{
   text-transform: uppercase; 
 }
 .desc p{
-  font-family: "Noto Serif KR", serif;
+  font-family: "Noto Sans", sans-serif;
   color: var(--nowhite);
   font-weight: 400;
   font-size: 20px;  
@@ -197,6 +199,7 @@ header .dropdown ul li:hover{
 }
 .main_menuright ul{
   display: flex;
+  
 }
 .login_links{
   margin-right: 59px;
@@ -204,17 +207,44 @@ header .dropdown ul li:hover{
 section{
   position: relative;
 }
+.slide-container{ 
+  width: 1600px;
+  margin: 0 auto;
+}
 .slide-wrapper{
-  width: 100%;
+  position: relative;
+  width: 309px;
+  height: 450px;
+  overflow: hidden;
+  /* margin-right: 0 auto; */
 }
-.new_product h3{
-  text-align: center;
+.slides{
+  width: 309px;
+  height: 450px;
+  display: flex;
+  position: relative;
+  gap: 133px;
 }
-.slide-container a{
-  margin-top: 55px;
-  color: white;
+.slides.animated{
+	left:0;
+	transition:0.5s;
 }
-.slide-container ul{  
+.slides li{
+	width: 309px;
+	height: 450px;
+	background: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.slide-wrapper h4{
+ margin-bottom: 50px;
+ color: #fff;
+}
+
+
+
+/* .slide-wrapper ul{  
   width: 1592px;
   display: flex;  
   justify-content: space-between;
@@ -223,11 +253,8 @@ section{
   gap: 100px;
   margin-bottom: 50px;
   flex-wrap: wrap;  
-}
-.slide-container ul li figure img{
-  background: linear-gradient(red, yellow); /*이미지에 그라디언트 주는방법 */
-}
- .newproduct{ /*텍스트에 그라디언트 주는방법 */
+} */
+ .newproduct{
   text-align: center;
   margin: 80px 0;
   font-size: 32px;
@@ -235,7 +262,19 @@ section{
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;  
 }
-.gift{ /*텍스트에 그라디언트 주는방법 */
+.controls{
+	text-align: center;
+	margin-top: 50px;
+}
+.controls span{
+	background:#333;
+	color: #fff;
+	padding:10px 20px;
+	margin:0 10px;
+	display: inline-block;
+}
+
+.gift{
   text-align: center;
   margin-bottom: 80px;
   font-size: 32px;
@@ -248,7 +287,7 @@ section{
   position:relative;
 }
 
-.measure_container h3{ /*텍스트에 그라디언트 주는방법  */
+.measure_container h3{ 
   text-align: center;
   margin-top: 168px;
   font-size: 32px;
@@ -282,11 +321,10 @@ section{
   justify-content: space-between;
 }
 footer{
-  height: 1500px;
+  height: 1000px;
   position: relative;
   background: url(/images/pradabg.jpg) no-repeat 0 0/ cover;
   display: flex;
-  justify-content: space-between;
 }
 footer dl{
   color: var(--primary);
