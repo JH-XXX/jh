@@ -31,6 +31,27 @@ body section{
 .content{
   background: #000 ;
 }
+
+.popup{
+  position: fixed;
+  left: 100px;
+  top: 100px;
+  background: #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  padding: 5px 20px 20px;
+  display: none;
+}
+.popup button{
+  background: #000;
+  color: var(--white);
+}
+.popup button:hover {
+  background-color: #ddd;
+}
+.popup.show{
+  display:block;
+}
 /*폰트*/
 
 /*
