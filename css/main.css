@@ -408,9 +408,21 @@ section{
   gap: 58px;
   
 }
-.measure_tap img{
-  width: 100%;
-  
+.measure_tap li{
+  position: relative;
+}
+.measure_tap li a{
+  position: absolute;
+  top: 20px;
+  margin-right: -30px;
+  background:transparent;
+  color: #fff; 
+  /* padding: 10px; */
+  text-decoration: none;
+}
+.measure_tap li a:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+  text-decoration: underline;
 }
 .measure_tap a{
   display: flex;
@@ -418,6 +430,8 @@ section{
   gap: 689px;
   object-fit: cover;
 }
+
+
 .measure_container ul a{
   color: var(--Dark-Gray);
   font-size: 25px;
@@ -430,16 +444,17 @@ section{
 }
 footer{
   z-index: 2;
-  margin-top: -300px;
+  margin-top: 100px;
   height: 1000px;
   position: relative;
   background: url(/images/pradabg.jpg) no-repeat 0 0/ cover;
   display: flex;
+  
 }
 footer .Introduction {
   display: flex;
-  flex-wrap: wrap; /* Allow content to wrap */
-  gap: 20px; /* Add spacing between items */
+  flex-wrap: wrap;
+  gap: 20px; 
   width: 100%;
 }
 footer dl {
@@ -449,7 +464,8 @@ footer dl {
 footer dl a {
   color: var(--primary);
   text-decoration: none;
-  transform: translateY(50%);
+  top: 50px;
+  line-height: 2;
 }
 
 footer dl a:hover {
