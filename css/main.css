@@ -211,6 +211,12 @@ section{
   width: 1600px;
   margin: 0 auto;
 }
+.wrapper{
+  display: flex;
+  width: 1600px;
+  margin:0 auto;
+  gap: 130px;
+}
 .slide-wrapper{
   position: relative;
   width: 309px;
@@ -220,18 +226,14 @@ section{
 }
 .slides{
   width: 1600px; /*임시로 넣음 */
-  height: 450px;
   display: flex;
-  gap: 133px; 
   position: relative;
   left: 0;
   transition: 0.5s;
 }
 
-
 .slides li{
 	width: 309px;
-	height: 450px;
 	background: transparent;
 	display: flex;
 	justify-content: center;

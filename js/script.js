@@ -12,12 +12,12 @@ function myMultipleSlide(target){
   const slideCount = slides.length;
   let currentIdx = 0;
   const slideWidth = 309;
-  const slideGap = 133;
   const maxSlides = 1;
   const prevBtn = target.querySelector('.prev');
   const nextBtn = target.querySelector('.next');
+  const pager = slideContainer.querySelector('.pager');
   
-  slideContainer.style.width = (slideWidth*slideCount)+(slideGap*(slideCount-1))+'px';
+  slideContainer.style.width = slideWidth*slideCount+'px';
   
   function moveSlide(num){
     if(num > slideCount - maxSlides){
@@ -27,7 +27,7 @@ function myMultipleSlide(target){
       num = slideCount - maxSlides;
     }
   
-    slideContainer.style.left = `${-num*(slideWidth+slideGap)}px`;
+    slideContainer.style.left = `${-num*slideWidth}px`;
     currentIdx = num;
     
   }
