@@ -8,14 +8,16 @@ function myMultipleSlide(target){
 
  
   let slideContainer = target.querySelector('.slides');
-  const slides = slideContainer.querySelectorAll('li');
+  let slides = slideContainer.querySelectorAll('li');
   const slideCount = slides.length;
   let currentIdx = 0;
   const slideWidth = 309;
   const maxSlides = 1;
   const prevBtn = target.querySelector('.prev');
   const nextBtn = target.querySelector('.next');
-  const pager = slideContainer.querySelector('.pager');
+  let pager = document.querySelector('.pager');
+
+
   
   slideContainer.style.width = slideWidth*slideCount+'px';
   
@@ -26,7 +28,6 @@ function myMultipleSlide(target){
     if(num < 0){
       num = slideCount - maxSlides;
     }
-  
     slideContainer.style.left = `${-num*slideWidth}px`;
     currentIdx = num;
     
@@ -47,6 +48,41 @@ function myMultipleSlide(target){
     }
   });
 }//myMultipleSlide
+
+let pagerHTML = '';
+
+slides.forEach((item,idx)=>{  
+  pagerHTML += `<a href="">${idx}</a>`;
+  item.style.left = `${idx*100}%`;
+});
+pager.innerHTML = pagerHTML;
+
+let pagerBtn = pager.querySelectorAll('a');
+
+pagerBtn.forEach((pager,idx)=>{
+  pager.addEventListener('click',(e)=>{
+    e.preventDefault();
+    showSlide(idx);
+  });
+});
+function showSlide(num){
+  if(currentIdx === num) return;
+  let currentSlide = slides[currentIdx];
+  let nextSlide = slides[num];
+
+  currentIdx.animate([{left: '0%'},{left:'-100%'}],{duration:500, fill:'forwards'});
+  nextSlide.animate([{left: '-100%'},{left:'0%'}],{duration:500, fill:'forwards'});
+  currentIdx = num;
+
+updatePager();
+}
+function updatePager(){
+  for(let pager of pagerBtn){
+    pager.classList.remove('active');
+  }
+  pagerBtn[currentIdx].classList.add('active');
+}
+updatePager();
 
 //쿠키
 let date = new Date();
@@ -104,6 +140,8 @@ checkCookie('Company','ABC');
 const body = document.body;
 let lastScroll = 0;
 
+
+
 window.addEventListener('scroll',()=>{
   let currentScroll = window.scrollY;
   
@@ -114,6 +152,10 @@ window.addEventListener('scroll',()=>{
     body.classList.remove('scroll-down');
     body.classList.add('scroll-up');
   }
-
   lastScroll = currentScroll;
 });
+
+ //pager
+
+
+
