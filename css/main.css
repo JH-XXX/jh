@@ -288,7 +288,7 @@ section{
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;  
 }
-.slide-wrapper .controls {
+/* .slide-wrapper .controls {
   position: absolute;
   top: 50%;
   transform:translateY(-50%);
@@ -302,7 +302,7 @@ section{
   line-height: 5rem;
   font-size: 10px;
   color: #444;
-}
+} */
 /* .controls{
   position: absolute;
   top: 20px; 
