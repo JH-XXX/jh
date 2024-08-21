@@ -225,7 +225,7 @@ section{
   /* margin-right: 0 auto; */
 }
 .slides{
-  width: 1600px; /*임시로 넣음 */
+
   display: flex;
   position: relative;
   left: 0;
@@ -244,6 +244,30 @@ section{
  color: #fff;
 }
 
+.pager {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  
+
+}
+
+.pager a {
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background: #ccc;
+  text-indent: -9999em;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.pager a.active {
+  background: #000;
+}
 
 
 /* .slide-wrapper ul{  
@@ -267,15 +291,19 @@ section{
 .controls{
   position: absolute;
   top: 20px; /* 임시 */
- 
+  /* text-indent: -99909em; */
   transform:translateY(-50%);
   z-index: 999999;
+ 
+  /* border: none; */
   
 }
 .controls span{
-	background:#000;
+  background:#000;
 	color: #fff;
   gap: 20px;
+  /* border: none; */
+  /* text-indent: -9999em; */
 	/* padding:10px 20px; */
 	/* margin:0 40px; */
 	/* display: inline-block; */
