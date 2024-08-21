@@ -215,18 +215,17 @@ section{
 .wrapper{
   display: flex;
   width: 1600px;
-  margin:0 auto;
+  margin-bottom:  50px;
   gap: 130px;
 }
 .slide-wrapper{
   position: relative;
   width: 309px;
-  height: 450px;
   overflow: hidden;
   /* margin-right: 0 auto; */
 }
-.slides{
 
+.slides{
   display: flex;
   position: relative;
   left: 0;
@@ -241,24 +240,27 @@ section{
 	align-items: center;
 }
 .slide-wrapper h4{
- margin-bottom: 50px;
+  text-align: center;
+  margin-top:55px;
+}
+.slide-wrapper h4 a{
+  margin: 0 auto;
+  text-align: center;
  color: #fff;
+ display: inline-block;
 }
 
 .pager {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 110;
   text-align: center;
-  
-
 }
 
 .pager a {
   width: 10px;
   height: 10px;
-  margin: 0 10px;
   border-radius: 50%;
   background: #ccc;
   text-indent: -9999em;
@@ -270,6 +272,20 @@ section{
   background: #000;
 }
 
+.prev{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  color: #000;
+  cursor: pointer;
+}
+.next{
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  color: #000;
+  cursor: pointer;
+}
 
 /* .slide-wrapper ul{  
   width: 1592px;
@@ -293,11 +309,9 @@ section{
   position: absolute;
   top: 50%;
   transform:translateY(-50%);
-  z-index: 999999;
-  
+  z-index: 999999;  
   border-radius: 50%;
   /* transition: all .3s ease-in; */
-
   line-height: 5rem;
   font-size: 10px;
   color: #444;
