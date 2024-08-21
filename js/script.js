@@ -1,6 +1,6 @@
 let slideWrappers = document.querySelectorAll('.slide-wrapper');
 slideWrappers.forEach(item=>{
-  myMultipleSlide(item);
+myMultipleSlide(item);
 });
 
 function myMultipleSlide(target){
@@ -48,10 +48,56 @@ function myMultipleSlide(target){
   });
 }//myMultipleSlide
 
+//쿠키
+let date = new Date();
+date.setDate(date.getDate() + 7);
 
+let myCookie = 'ABC=재방문;expires='+date.toUTCString();
+document.cookie = myCookie;
 
+console.log(document.cookie);
+console.log(document.cookie.search('ABC=재방문'));
+let cookie = document.cookie.replace(' ','');
+let cookies = document.cookie.split(';');
 
+console.log(cookies);
+let result = cookies.find(item=>item ==='ABC=재방문');
+console.log(result);
 
+const popup = document.querySelector('.popup');
+const check = document.querySelector('#check');
+const button = document.querySelector('button');
+
+button.addEventListener('click',()=>{ 
+  if(check.checked){
+    setCookie('Company','ABC',1);
+  }else{
+    delCookie('Company','ABC');
+  }
+  popup.classList.remove('show');
+});
+
+function setCookie(name,val,due){
+  let date = new Date();
+date.setDate(date.getDate() + due);
+
+let myCookie = `${name}=${val};expires=`+date.toUTCString();
+document.cookie = myCookie;
+}
+function delCookie(name){
+  let date = new Date();
+date.setDate(date.getDate() - 1);
+
+let myCookie = `${name}=${val};expires=`+date.toUTCString();
+document.cookie = myCookie;
+}
+
+function checkCookie(name,){
+  if(document.cookie.search(`${name}=`) === -1){
+    popup.classList.add('show');
+  }
+}
+checkCookie('Company','ABC');
 
 
 
