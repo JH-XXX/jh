@@ -67,14 +67,12 @@ font-family: "PT Serif", serif;
 
 header{
   padding:40px;
-  /* position: relative; */
   border-bottom: #fff solid 2px; 
   transition: transform 0.3s;
 } 
 
 
 .page_header{
-  /* width: 100%; */
   position: fixed;
   align-items: center;
   left: 0;
@@ -96,10 +94,6 @@ header{
 
 .content_container{
   width: 100%;
-  
-  /* display: flex;
-  justify-content: space-between; 
-  align-items: center; */
 }
 .content_container .desc{  
   top: 0;
@@ -214,14 +208,12 @@ header .dropdown ul li:hover{
 .main_menuright{
   color: var(--white);  
   display: flex;
-  /* justify-content: center; */
 }
 .main_menuright .mr{
   margin-right: 50px;
 }
 .main_menuright ul{
   display: flex;
-  
 }
 .login_links{
   margin-right: 59px;
@@ -253,7 +245,6 @@ section{
   left: 0;
   transition: left 0.5s ease;
 }
-
 .slides li{
 	width: 309px;
 	background: transparent;
@@ -279,7 +270,7 @@ section{
   transform: translateX(-50%);
   right: 0;
   bottom: 90px;
-  
+
   text-align: center;
 }
 
@@ -325,19 +316,6 @@ section{
     transition: 0.3s ease-in-out;
     transform: scale(1.1);
   }
-
-
-
-/* .slide-wrapper ul{  
-  width: 1592px;
-  display: flex;  
-  justify-content: space-between;
-  text-align: center;      
-  margin: 0 auto;
-  gap: 100px;
-  margin-bottom: 50px;
-  flex-wrap: wrap;  
-} */
 .newproduct{
   text-align: center;
   margin: 80px 0;
@@ -352,30 +330,14 @@ section{
   transform:translateY(-50%);
   z-index: 999999;  
   border-radius: 50%;
-  /* transition: all .3s ease-in; */
   line-height: 5rem;
   font-size: 10px;
   color: #444;
 }
-/* .controls{
-  position: absolute;
-  top: 20px; 
-  text-indent: -99909em;
-  transform:translateY(-50%);
-  z-index: 999999;
-}
-  */
-  /* border: none; */
-  
+
 .controls span{
   background:#000;
 	color: #fff;
-  /* gap: 20px; */
-  /* border: none; */
-  /* text-indent: -9999em; */
-	/* padding:10px 20px; */
-	/* margin:0 40px; */
-	/* display: inline-block; */
 }
 
 .gift{
@@ -398,7 +360,6 @@ section{
   text-transform: uppercase;
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
-  /* transform: translate(50%,50%); */
 }
 .measure_tap{
   width: 1600px;
@@ -417,7 +378,6 @@ section{
   margin-right: -30px;
   background:transparent;
   color: #fff; 
-  /* padding: 10px; */
   text-decoration: none;
 }
 .measure_tap li a:hover{
@@ -468,8 +428,7 @@ footer dl a {
   line-height: 2;
 }
 
-footer dl a:hover {
-  
+footer dl a:hover {  
   text-decoration: underline;
 }
 footer:before{  
