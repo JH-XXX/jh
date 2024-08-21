@@ -61,6 +61,7 @@ header{
   top: 0;
   background: #000;
   transition:transform 0.5s;
+  z-index: 100;
 }
 .scroll-down .page_header{
   transform: translateY(-100%);
@@ -288,21 +289,19 @@ section{
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;  
 }
-/* .slide-wrapper .controls {
+.slide-wrapper .controls {
   position: absolute;
   top: 50%;
   transform:translateY(-50%);
   z-index: 999999;
-  height: 5rem;
-  width: 5rem;
+  
   border-radius: 50%;
-  transition: all .3s ease-in;
-  background: rgba(255, 255, 255, .5);
+  /* transition: all .3s ease-in; */
   text-align: center;
   line-height: 5rem;
   font-size: 10px;
   color: #444;
-} */
+}
 /* .controls{
   position: absolute;
   top: 20px; 
@@ -354,6 +353,7 @@ section{
 }
 .measure_tap img{
   width: 100%;
+  
 }
 .measure_tap a{
   display: flex;
@@ -371,6 +371,8 @@ section{
   justify-content: space-between;
 }
 footer{
+  z-index: 2;
+  margin-top: -300px;
   height: 1000px;
   position: relative;
   background: url(/images/pradabg.jpg) no-repeat 0 0/ cover;
@@ -381,15 +383,15 @@ footer dl{
   
 }
 
-footer:before{
-  content:'';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background:linear-gradient(rgba(0,0,0,.8), rgba(20,19,19,.7));
-  
+footer:before{  
+    content:'';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background:linear-gradient(rgba(0,0,0,1), rgba(20,19,19,1) 50%, rgba(20,19,19,0) );  
+    
 }
 
 
