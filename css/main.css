@@ -288,20 +288,35 @@ section{
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;  
 }
-.controls{
+.slide-wrapper .controls {
   position: absolute;
-  top: 20px; /* 임시 */
-  /* text-indent: -99909em; */
+  top: 50%;
   transform:translateY(-50%);
   z-index: 999999;
- 
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  transition: all .3s ease-in;
+  background: rgba(255, 255, 255, .5);
+  text-align: center;
+  line-height: 5rem;
+  font-size: 10px;
+  color: #444;
+}
+/* .controls{
+  position: absolute;
+  top: 20px; 
+  text-indent: -99909em;
+  transform:translateY(-50%);
+  z-index: 999999;
+}
+  */
   /* border: none; */
   
-}
 .controls span{
   background:#000;
 	color: #fff;
-  gap: 20px;
+  /* gap: 20px; */
   /* border: none; */
   /* text-indent: -9999em; */
 	/* padding:10px 20px; */
