@@ -170,8 +170,8 @@ button{
 }
 button i{
   color: var(--nowhite);
-  
 }
+
 header .dropdown{
   position: relative;
 }
@@ -238,19 +238,20 @@ section{
   width: 1600px;
   margin-bottom:  50px;
   gap: 130px;
+  overflow: hidden;
 }
 .slide-wrapper{
   position: relative;
-  width: 309px;
-  overflow: hidden;
-  /* margin-right: 0 auto; */
+  width: 100%;
+  overflow: hidden;/*임시*/
+  
 }
 
 .slides{
   display: flex;
   position: relative;
   left: 0;
-  transition: 0.5s;
+  transition: left 0.5s ease;
 }
 
 .slides li{
@@ -259,6 +260,7 @@ section{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+  position: relative; /*임시*/
 }
 .slide-wrapper h4{
   text-align: center;
@@ -273,9 +275,11 @@ section{
 
 .pager {
   position: absolute;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   right: 0;
-  bottom: 110;
+  bottom: 90px;
+  
   text-align: center;
 }
 
@@ -293,20 +297,36 @@ section{
   background: #000;
 }
 
-.prev{
+.prev, .next {
   position: absolute;
-  top: 50%;
-  left: 0;
-  color: #000;
+  top: 45%;  
+  transform: translateY(-50%);
+  background-color: transparent; 
+  color: rgba(0, 0, 0, .2); 
+  border: none;
+  padding: 10px;
   cursor: pointer;
+  z-index: 9999; /
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.next{
-  position: absolute;
-  right: 0;
-  bottom: 50%;
-  color: #000;
-  cursor: pointer;
+.prev {
+  left: 10px;
 }
+.next {
+  right: 10px;
+}
+.prev i,.next i{
+  font-size: 24px;
+}
+.prev:hover i, .next:hover i{
+    color: #333131;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+  }
+
+
 
 /* .slide-wrapper ul{  
   width: 1592px;
@@ -318,7 +338,7 @@ section{
   margin-bottom: 50px;
   flex-wrap: wrap;  
 } */
- .newproduct{
+.newproduct{
   text-align: center;
   margin: 80px 0;
   font-size: 32px;
@@ -382,9 +402,11 @@ section{
 }
 .measure_tap{
   width: 1600px;
+  height: 1000px;
   margin:168px auto 0;
   display: flex;  
   gap: 58px;
+  
 }
 .measure_tap img{
   width: 100%;
@@ -394,6 +416,7 @@ section{
   display: flex;
   justify-content: space-between;
   gap: 689px;
+  object-fit: cover;
 }
 .measure_container ul a{
   color: var(--Dark-Gray);
@@ -413,11 +436,26 @@ footer{
   background: url(/images/pradabg.jpg) no-repeat 0 0/ cover;
   display: flex;
 }
-footer dl{
+footer .Introduction {
+  display: flex;
+  flex-wrap: wrap; /* Allow content to wrap */
+  gap: 20px; /* Add spacing between items */
+  width: 100%;
+}
+footer dl {
+  margin: 0 auto;
+ 
+}
+footer dl a {
   color: var(--primary);
-  
+  text-decoration: none;
+  transform: translateY(50%);
 }
 
+footer dl a:hover {
+  
+  text-decoration: underline;
+}
 footer:before{  
     content:'';
     position: absolute;
@@ -426,7 +464,7 @@ footer:before{
     top: 0;
     bottom: 0;
     background:linear-gradient(rgba(0,0,0,1), rgba(20,19,19,1) 50%, rgba(20,19,19,0) );  
-    
+    z-index: -1;
 }
 
 
